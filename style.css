@@ -1,6 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
 html{
     font-size: 10px;
     color: #4e4d4d;
+    font-family: 'Roboto', sans-serif;
 }
 
 main{
@@ -46,6 +49,7 @@ section > div{
 }
 
 input[type="number"]{
+    font-family: inherit;
     font-size: 1.6rem;
     background: #f4f4f5;
     border-radius: 0.5rem;
@@ -62,4 +66,36 @@ input[type="number"]{
 .total{
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.range{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    margin-top: 1.2rem;
+    border-radius: 0.3rem;
+    outline-color: #5bceae;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #3dc0c0;
+}
+
+.range::-moz-range-thumb{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #3dc0c0;
+    border: none;
+}
+
+.range::-moz-focus-outer{
+    border: 0;
 }
